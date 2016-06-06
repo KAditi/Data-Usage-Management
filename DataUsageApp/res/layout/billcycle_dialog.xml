@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    
+<NumberPicker
+    android:id="@+id/numberPick_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="64dp" />
+
+	<LinearLayout 
+		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal"
+    	android:gravity="center_horizontal"
+    	android:layout_marginBottom="10dp"
+    	android:layout_marginTop="20dp">
+
+		<Button
+		    android:id="@+id/btn_billcycle_set"
+		    style="@style/button_bl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Set"
+		    android:textSize="20sp"
+		    android:width="110dp" />
+
+    <Button
+        android:id="@+id/btn_billcycle_cancel"
+        style="@style/button_bl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numberPick_date"
+        android:layout_below="@+id/numberPick_date"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="66dp"
+        android:text="Cancel"
+        android:textSize="20sp"
+        android:width="110dp" />
+	    
+	</LinearLayout>
+    
+</LinearLayout>

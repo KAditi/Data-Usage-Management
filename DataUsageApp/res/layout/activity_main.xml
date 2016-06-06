@@ -1,0 +1,68 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    tools:context="com.example.loginapp.MainActivity"
+    tools:ignore="MergeRootFrame" >
+   
+<!-- RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginapp.MainActivity"
+    tools:ignore="MergeRootFrame" -->
+	
+    <TextView
+        style="@style/text_title_bl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textAlignment="center"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/lbl_WIFI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="70dp"
+        android:paddingTop="70dp"
+        android:text="Family Data Plan"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnwc_login"
+        style="@style/button_bl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="46dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="15dp"
+        android:text="Login"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnwc_signup"
+        style="@style/button_bl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:text="Signup"
+        android:textSize="30sp" />
+
+</TableLayout>

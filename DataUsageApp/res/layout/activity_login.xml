@@ -1,0 +1,111 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.loginapp.LoginActivity"
+    tools:ignore="MergeRootFrame" 
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/lbl_WIFI"
+        style="@style/text_title_bl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:textAlignment="center"
+        android:typeface="normal" />
+    
+     <TextView
+         android:id="@+id/lblMsg"
+         style="@style/Errormsg"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/lbl_WIFI" 
+         android:paddingBottom="35sp"
+         android:paddingTop="35sp"/>
+
+     <LinearLayout          
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/lblEmail"
+             style="@style/text_large_bl"
+             android:layout_width="133dp"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="20dp"
+             android:gravity="right"
+             android:paddingRight="10dp"
+             android:paddingTop="10dp"
+             android:text="@string/lblEmail"
+             android:textAppearance="?android:attr/textAppearanceLarge" />
+	         
+       	<EditText
+       	    android:id="@+id/txtEmail"
+       	    style="@style/editview_lb"
+       	    android:layout_width="fill_parent"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignLeft="@+id/txtPwd"
+       	    android:layout_alignTop="@+id/lblEmail"
+       	    android:layout_marginRight="15dp"
+       	    android:layout_weight="1"
+       	    android:ems="10"
+       	    android:inputType="textEmailAddress"
+       	    android:paddingRight="10dp"  >
+             <requestFocus/>
+            </EditText>
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+
+         <TextView
+             android:id="@+id/lblPwd"
+             style="@style/text_large_bl"
+             android:layout_width="133dp"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/btnLogin"
+             android:layout_gravity="right|fill_vertical"
+             android:layout_marginBottom="100dp"
+             android:layout_toLeftOf="@+id/txtPwd"
+             android:gravity="right"
+             android:paddingRight="10dp"
+             android:text="@string/lblPwd"
+             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+         <EditText
+             android:id="@+id/txtPwd"
+             style="@style/editview_lb"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="15dp"
+             android:layout_weight="1"
+             android:ems="10"
+             android:inputType="textPassword" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+         
+        <Button
+	        android:id="@+id/btnLogin"
+	        style="@style/button_bl"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentBottom="false"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerInParent="true"
+	        android:text="@string/btnlogin" />
+
+         
+     </LinearLayout>
+</LinearLayout>

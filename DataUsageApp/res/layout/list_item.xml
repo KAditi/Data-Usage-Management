@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000" >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFF" />
+
+     <ImageButton
+         android:id="@+id/btnDelete"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:background="#000"
+         android:padding="5dp"
+         android:src="@drawable/deletewh" />
+
+    <ImageButton
+        android:id="@+id/imgbtnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnDelete"
+        android:background="#000"
+        android:padding="5dp"
+        android:src="@drawable/edttwh" />
+        
+        <TextView
+        android:id="@+id/textemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textName"
+        android:paddingLeft="5dp"
+        android:text="Email:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFF"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/list_divider_bl"
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textemail"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textPhno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textemail"
+        android:paddingLeft="5dp"
+        android:text="Phno:"
+        android:textColor="#FFFF" />
+
+</RelativeLayout>

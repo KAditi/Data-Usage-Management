@@ -1,0 +1,184 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginapp.WelcomeActivity"
+    tools:ignore="MergeRootFrame" 
+    android:orientation="vertical"
+    android:background="#000" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- TextView
+        android:id="@+id/textView1"
+        style="@style/text_title_bl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:typeface="normal" />	-->
+    <LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<!--  style="@style/white_background_bl"-->
+		<LinearLayout          
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+
+		    <ImageView
+                android:id="@+id/img_wifi"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="5px"
+                android:src="@drawable/wifiicon" />
+
+		    <TextView
+		        android:id="@+id/lbl_WIFI"
+		        style="@style/list_item_bl"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"        
+		        android:text="@string/lbl_wifi" />
+
+		    <Switch
+		        android:id="@+id/switch_wifi"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"				        
+		        android:textStyle="bold" />
+	     
+	  	</LinearLayout>
+	 	<View
+			android:layout_width="fill_parent"
+			android:layout_height="1sp"
+			style="@style/list_divider_bl"/>	  
+	    <LinearLayout          
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal">  	
+	      	
+	      	<ImageView
+		       android:id="@+id/img_datausage"
+		       android:layout_width="50px"
+		       android:layout_height="50px"
+		       android:layout_marginLeft="10px"
+		       android:layout_marginRight="20px"
+		       android:layout_marginTop="5px"
+		       android:src="@drawable/dataicon">
+   			</ImageView>
+
+	      	<TextView
+	      	    android:id="@+id/lbl_datausage"
+	      	    style="@style/list_item_bl"
+	      	    android:layout_width="fill_parent"
+	      	    android:layout_height="wrap_content"
+	      	    android:text="Data Usage Report"/>
+
+	 	</LinearLayout>
+	 	<!--<View
+			android:layout_width="fill_parent"
+			android:layout_height="1sp"
+			style="@style/list_divider_bl"/>	 	
+	    <LinearLayout          
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal">  	
+	    
+	         <ImageView
+		       android:id="@+id/img_key"
+		       android:layout_width="50px"
+		       android:layout_height="50px"
+		       android:layout_marginLeft="10px"
+		       android:layout_marginRight="20px"
+		       android:layout_marginTop="10px"
+		       android:src="@drawable/keyicon">
+   			</ImageView>
+
+	        <TextView
+	            android:id="@+id/lbl_changepwd"
+	            android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Change Password"
+				style="@style/list_item_bl"/>
+
+	   	</LinearLayout> -->
+	   	
+	 	<View
+			android:layout_width="fill_parent"
+			android:layout_height="1sp"
+			style="@style/list_divider_bl"/>	   	
+	   	<LinearLayout          
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal">  	
+	      
+	      	<ImageView
+		       android:id="@+id/img_setting"
+		       android:layout_width="50px"
+		       android:layout_height="50px"
+		       android:layout_marginLeft="10px"
+		       android:layout_marginRight="20px"
+		       android:layout_marginTop="5px"
+		       android:src="@drawable/users1">
+   			</ImageView>
+
+	      	<TextView
+	      	    android:id="@+id/lbl_setting"
+	      	    android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Manage Users"
+				style="@style/list_item_bl"/>
+
+	 	</LinearLayout>
+
+	 	<View
+	 	    android:id="@+id/vw_setting"
+	 	    style="@style/list_divider_bl"
+	 	    android:layout_width="fill_parent"
+	 	    android:layout_height="1sp" />
+
+	</LinearLayout>
+
+  	<LinearLayout          
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	    	android:orientation="horizontal">  	
+	      
+	      	<ImageView
+		       android:id="@+id/img_cycle"
+		       android:layout_width="50px"
+		       android:layout_height="50px"
+		       android:layout_marginLeft="10px"
+		       android:layout_marginRight="20px"
+		       android:layout_marginTop="5px"
+		       android:src="@drawable/calender">
+   			</ImageView>
+
+	      	<TextView
+	      	    android:id="@+id/lbl_billingcycle"
+	      	    android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Billing Cycle"
+				style="@style/list_item_bl"/>
+
+	 	</LinearLayout>
+
+	 	<View
+	 	    android:id="@+id/vw_bill"
+	 	    style="@style/list_divider_bl"
+	 	    android:layout_width="fill_parent"
+	 	    android:layout_height="1sp" />
+
+    <!-- ToggleButton
+        android:id="@+id/toggleBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" 
+        android:textOn="ON"
+        android:textOff="OFF"/> -->
+    
+</LinearLayout>
+

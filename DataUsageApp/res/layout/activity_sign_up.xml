@@ -1,0 +1,189 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.loginapp.SignUpActivity"
+    tools:ignore="MergeRootFrame" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    
+
+    <TextView
+        android:id="@+id/lbl_WIFI"
+        style="@style/text_title_bl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SignUp Page"
+        android:textAlignment="center"
+        android:typeface="normal" />
+             
+    <TextView
+        android:id="@+id/lblmsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:layout_alignParentLeft="true"     
+        android:paddingBottom="30sp"
+       	android:paddingTop="30sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"         
+        style="@style/Errormsg"/>
+    
+    <LinearLayout          
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+    
+        <TextView
+	        android:id="@+id/txt_fname"
+	        style="@style/text_large_bl"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:paddingRight="10dp"	   
+        	android:text="@string/lblfirstname"	       	    	
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+	    <EditText
+	        android:id="@+id/txt_signup_firstname"
+	    	android:layout_width="fill_parent"
+       	    android:layout_height="wrap_content"
+       	    android:layout_marginRight="15dp"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        style="@style/editview_lb"
+	        android:paddingRight="10dp" >
+             <requestFocus/>
+            </EditText>	        
+  	</LinearLayout>
+  	
+    <LinearLayout          
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	
+	    <TextView
+	        android:id="@+id/lbl_wc_welcome"
+	        style="@style/text_large_bl"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:paddingRight="10dp"	   
+  	        android:text="@string/lbllastname"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	    <EditText
+	        android:id="@+id/txt_signup_lastname"
+	        android:layout_width="fill_parent"
+       	    android:layout_height="wrap_content"
+       	    android:layout_marginRight="15dp"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        style="@style/editview_lb"
+	        android:paddingRight="10dp"/>
+		    
+    </LinearLayout>
+    
+    <LinearLayout          
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+
+	    <TextView
+	        android:id="@+id/txt_ceateUser"
+	        style="@style/text_large_bl"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:paddingRight="10dp"
+          	android:text="@string/lblEmail"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <EditText
+	        android:id="@+id/txt_signup_email"
+	        android:layout_width="fill_parent"
+       	    android:layout_height="wrap_content"
+       	    android:layout_marginRight="15dp"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        style="@style/editview_lb"
+	        android:paddingRight="10dp"
+	        android:inputType="textEmailAddress" />	   
+	</LinearLayout>
+    
+    <LinearLayout          
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+		    
+	    <TextView
+	        android:id="@+id/textView3"
+	        style="@style/text_large_bl"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:paddingRight="10dp"	   
+	        android:text="@string/lblPwd"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	  	<EditText
+	        android:id="@+id/txt_signup_pwd"
+	        android:layout_width="fill_parent"
+       	    android:layout_height="wrap_content"
+       	    android:layout_marginRight="15dp"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        style="@style/editview_lb"
+	        android:paddingRight="10dp"
+	        android:inputType="textPassword" />		    
+	</LinearLayout>
+	
+    <LinearLayout          
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+    
+	    <TextView
+	        android:id="@+id/textView4"
+	        style="@style/text_large_bl"
+	        android:layout_width="159dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="60dp"
+	        android:gravity="right"
+	        android:paddingRight="10dp"
+	        android:text="@string/lblcontact"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+		<EditText
+	        android:id="@+id/txt_signup_phone"
+	        android:layout_width="fill_parent"
+       	    android:layout_height="wrap_content"
+       	    android:layout_marginRight="15dp"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        style="@style/editview_lb"
+	        android:paddingRight="10dp"
+	        android:inputType="phone">	        
+	    </EditText>	   				
+	</LinearLayout>
+	
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+		
+		 <Button
+	        android:id="@+id/btn_signup"
+	        style="@style/button_bl"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentBottom="false"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerInParent="true"
+	        android:text="@string/btnsignup" />
+	</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DataUsageApp</string>
+    <string name="welcome">Manage Users</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblemail">Email</string>
+    <string name="lblPwd">Password</string>
+    <string name="btnlogin">Login</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="lblScreen">Login Screen</string>
+    <string name="lblBillCycle">Billing Cycle</string>
+    <string name="btnAdd"> + Add User</string>
+    <string name="btnEdit">Edit</string>
+    <string name="btnRemove">Remove</string>
+    <string name="btnView">View</string>
+    <string name="title_activity_add_account">AddAccountActivity</string>
+   
+    <string name="lblFirstName">First Name</string>
+    <string name="lblLastName">Last Name</string>
+    <string name="lblEmail">Email</string>
+    <string name="lblPhoneNum">Phone Number</string>
+    <string name="lblQuota">Quota</string>
+    <string name="lblThreshold">Threshold</string>
+    <string name="lblTurnOff">Turn Off Data (Limit exceeded)</string>
+    <string name="btnAddAccount">Submit</string>
+   
+    <string-array name="spTurnOff">
+        <item>ON</item>
+        <item>OFF</item>
+    </string-array>
+    
+	<string name="lbl_wifi">WiFi</string>
+	<string name="lblfirstname">First Name</string>
+    <string name="lbllastname">Last Name</string>
+    <string name="lblcontact">Phone Number</string>
+    <string name="btnsignup">Sign Up</string>
+    
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+	<string name="title_activity_datausage_report">DatausageReportActivity</string>
+	<string name="txtAddUser">User Details</string>
+	<string name="title_activity_summary">SummaryActivity</string>
+	
+	<string name="capital_on">ON</string>
+	<string name="capital_off">OFF</string>
+	  
+</resources>
